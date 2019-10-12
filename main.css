@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+html body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+html body .home-wrapper {
+  height: 100%;
+}
+html body .home-wrapper .content-wrapper {
+  background-color: #fff2cc;
+  display: flex;
+  height: 100%;
+}
+html body .home-wrapper .content-wrapper .img-column {
+  width: 50%;
+}
+html body .home-wrapper .content-wrapper .img-column .home-img {
+  max-width: 100%;
+  max-height: 75%;
+  margin-top: 80px;
+  margin-right: 10px;
+  float: right;
+}
+html body .home-wrapper .content-wrapper .description-column {
+  width: 50%;
+  height: 100%;
+  display: table;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper {
+  display: table-cell;
+  padding-bottom: 60px;
+  vertical-align: middle;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-name-wrapper {
+  display: flex;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-name-wrapper .home-name {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  position: absolute;
+  z-index: 100;
+  font-size: 70px;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-name-wrapper .home-name.shadow {
+  position: absolute;
+  transform: translate(5px, 5px);
+  color: white;
+  z-index: 0;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-subtitle {
+  font-family: 'Dawning of a New Day', cursive;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 100;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-link {
+  font-family: 'Abel', sans-serif;
+  color: black;
+  text-decoration: unset;
+  font-style: italic;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-link.pulsate {
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

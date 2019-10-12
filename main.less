@@ -1,0 +1,97 @@
+@site-yellow: #fff2cc;
+
+html {
+	height: 100%;
+	width: 100%;
+	body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+
+		.home-wrapper {
+			height: 100%;
+
+			.content-wrapper {
+				background-color: @site-yellow;
+				display: flex;
+				height: 100%;
+
+				.img-column {
+					width: 50%;
+
+					.home-img {
+						max-width: 100%;
+						max-height: 75%;
+						margin-top: 80px;
+						margin-right: 10px;
+						float: right;
+					}
+				}
+
+				.description-column {
+					width: 50%;
+					height: 100%;
+					display: table;
+
+					.home-text-wrapper {
+						display: table-cell;
+						padding-bottom: 60px;
+						vertical-align: middle;
+
+						.home-name-wrapper {
+							display: flex;
+
+							.home-name {
+								font-family: 'Josefin Sans', sans-serif;
+								margin: 0px;
+								position: absolute;
+								z-index: 100;
+								font-size: 70px;
+
+								&.shadow {
+									position: absolute;
+									transform: translate(5px, 5px);
+									color: white;
+									z-index: 0;
+								}
+							}
+						}
+
+						.home-subtitle {
+							font-family: 'Dawning of a New Day', cursive;
+							margin-top: 80px;
+							margin-bottom: 20px;
+							font-size: 30px;
+							font-weight: 100;
+						}
+
+						.home-link {
+							font-family: 'Abel', sans-serif;
+							color: black;
+							text-decoration: unset;
+							font-style: italic;
+
+							&.pulsate {
+							    -webkit-animation: pulsate 3s ease-out;
+							    -webkit-animation-iteration-count: infinite; 
+							    opacity: 0.5;
+							}
+							
+							@-webkit-keyframes pulsate {
+							    0% { 
+							        opacity: 0.5;
+							    }
+							    50% { 
+							        opacity: 1.0;
+							    }
+							    100% { 
+							        opacity: 0.5;
+							    }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
