@@ -7,6 +7,9 @@ html body {
   width: 100%;
   margin: 0;
 }
+html body .bold {
+  font-weight: bold;
+}
 html body .home-wrapper {
   height: 100%;
 }
@@ -63,6 +66,7 @@ html body .home-wrapper .content-wrapper .description-column .home-text-wrapper 
   color: black;
   text-decoration: unset;
   font-style: italic;
+  padding-bottom: 5px;
 }
 html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-link.pulsate {
   -webkit-animation: pulsate 3s ease-out;
@@ -79,4 +83,97 @@ html body .home-wrapper .content-wrapper .description-column .home-text-wrapper 
   100% {
     opacity: 0.5;
   }
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-link:hover {
+  border-bottom: 2px solid currentColor;
+  border-bottom-color: #b6d7a8;
+}
+html body #navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  height: 60px;
+}
+html body #navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+html body #navbar ul .home-button {
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+}
+html body #navbar ul .active {
+  border-bottom: 2px solid currentColor;
+  border-bottom-color: #fff2cc;
+}
+html body #navbar ul li {
+  font-family: 'Abel', sans-serif;
+  float: right;
+}
+html body #navbar ul li a {
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+html body #navbar ul .nav-link a:hover {
+  border-bottom: 2px solid currentColor;
+  border-bottom-color: #b6d7a8;
+}
+html body .about-wrapper {
+  height: 90%;
+  display: flex;
+  padding-top: 60px;
+}
+html body .about-wrapper .img-column {
+  width: 40%;
+  height: 100%;
+}
+html body .about-wrapper .img-column .img-text-container {
+  height: 100%;
+}
+html body .about-wrapper .img-column .img-text-container .img-container {
+  height: 100%;
+  width: 100%;
+}
+html body .about-wrapper .img-column .img-text-container .img-container .about-img {
+  max-width: 85%;
+  max-height: 75%;
+  margin-top: 80px;
+  margin-right: 10px;
+  float: right;
+}
+html body .about-wrapper .img-column .img-text-container .img-container .about-img-text {
+  position: absolute;
+}
+html body .about-wrapper .description-column {
+  width: 60%;
+  height: 100%;
+}
+html body .about-wrapper .description-column .about-text-wrapper {
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+}
+html body .about-wrapper .description-column .about-text-wrapper .about-quote {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 40px;
+  margin-top: 0;
+}
+html body .about-wrapper .description-column .about-text-wrapper .about-description {
+  font-family: 'Nunito', sans-serif;
+}
+html body .about-wrapper .description-column .about-text-wrapper .desc-quote {
+  color: #768c6d;
+  padding-left: 20px;
+  font-style: italic;
+}
+html body .about-wrapper .description-column .about-text-wrapper .name {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
 }

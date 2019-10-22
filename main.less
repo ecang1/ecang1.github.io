@@ -1,4 +1,6 @@
 @site-yellow: #fff2cc;
+@site-green: #b6d7a8;
+@site-dark-green: #768c6d;
 
 html {
 	height: 100%;
@@ -7,6 +9,10 @@ html {
 		height: 100%;
 		width: 100%;
 		margin: 0;
+
+    .bold {
+      font-weight: bold;
+    }
 
 		.home-wrapper {
 			height: 100%;
@@ -70,6 +76,7 @@ html {
 							color: black;
 							text-decoration: unset;
 							font-style: italic;
+              padding-bottom: 5px;
 
 							&.pulsate {
 							    -webkit-animation: pulsate 3s ease-out;
@@ -89,9 +96,124 @@ html {
 							    }
 							}
 						}
+
+            .home-link:hover {
+              border-bottom: 2px solid currentColor;
+              border-bottom-color: @site-green;
+            }
 					}
 				}
-			}
+      }
 		}
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        height: 60px;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        .home-button {
+          float: left;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 24px;
+        }
+
+        .active {
+          border-bottom: 2px solid currentColor;
+            border-bottom-color: @site-yellow;
+        }
+
+        li {
+          font-family: 'Abel', sans-serif;
+          float: right;
+
+          a {
+            color: black;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+        }
+
+        .nav-link {
+          a:hover {
+            border-bottom: 2px solid currentColor;
+            border-bottom-color: @site-green;
+          }
+        }
+      }
+    }
+
+    .about-wrapper {
+      height: 90%;
+      display: flex;
+      padding-top: 60px;
+
+      .img-column {
+        width: 40%;
+        height: 100%;
+
+        .img-text-container {
+          height: 100%;
+
+          .img-container {
+            height: 100%;
+            width: 100%;
+
+            .about-img {
+              max-width: 85%;
+              max-height: 75%;
+              margin-top: 80px;
+              margin-right: 10px;
+              float: right;
+            }
+
+            .about-img-text {
+              position: absolute;
+            }
+          }
+        }
+      }
+
+      .description-column {
+        width: 60%;
+        height: 100%;
+
+        .about-text-wrapper {
+          padding-left: 20px;
+          padding-right: 50px;
+          padding-bottom: 100px;
+
+          .about-quote {
+            font-family: 'Dawning of a New Day', cursive;
+            font-size: 40px;
+            margin-top: 0;
+          }
+
+          .about-description {
+            font-family: 'Nunito', sans-serif;
+          }
+
+          .desc-quote {
+            color: @site-dark-green;
+            padding-left: 20px;
+            font-style: italic;
+          }
+
+          .name {
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+          }
+        }
+      }
+    }
 	}
 }
