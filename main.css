@@ -2,6 +2,9 @@ html {
   height: 100%;
   width: 100%;
 }
+html .no-scroll-y {
+  overflow-y: hidden;
+}
 html body {
   height: 100%;
   width: 100%;
@@ -9,6 +12,10 @@ html body {
 }
 html body .bold {
   font-weight: bold;
+}
+html body .wrapper {
+  height: 90%;
+  padding-top: 60px;
 }
 html body .home-wrapper {
   height: 100%;
@@ -131,7 +138,7 @@ html body .about-wrapper {
   padding-top: 60px;
 }
 html body .about-wrapper .img-column {
-  width: 40%;
+  width: 45%;
   height: 100%;
 }
 html body .about-wrapper .img-column .img-text-container {
@@ -142,18 +149,19 @@ html body .about-wrapper .img-column .img-text-container .img-container {
   width: 100%;
 }
 html body .about-wrapper .img-column .img-text-container .img-container .about-img {
-  max-width: 85%;
+  max-width: 95%;
   max-height: 75%;
   margin-top: 80px;
   margin-right: 10px;
-  float: right;
+  float: left;
 }
 html body .about-wrapper .img-column .img-text-container .img-container .about-img-text {
   position: absolute;
 }
 html body .about-wrapper .description-column {
-  width: 60%;
+  width: 55%;
   height: 100%;
+  overflow: scroll;
 }
 html body .about-wrapper .description-column .about-text-wrapper {
   padding-left: 20px;
@@ -162,11 +170,13 @@ html body .about-wrapper .description-column .about-text-wrapper {
 }
 html body .about-wrapper .description-column .about-text-wrapper .about-quote {
   font-family: 'Dawning of a New Day', cursive;
-  font-size: 40px;
-  margin-top: 0;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 html body .about-wrapper .description-column .about-text-wrapper .about-description {
   font-family: 'Nunito', sans-serif;
+  font-size: 13px;
 }
 html body .about-wrapper .description-column .about-text-wrapper .desc-quote {
   color: #768c6d;
@@ -176,4 +186,110 @@ html body .about-wrapper .description-column .about-text-wrapper .desc-quote {
 html body .about-wrapper .description-column .about-text-wrapper .name {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
+}
+html body .summary-wrapper {
+  height: 100%;
+  padding-top: 60px;
+  background-image: url('img3_bw.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+html body .summary-wrapper .summary {
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+html body .summary-wrapper .summary .summary-quote {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+html body .summary-wrapper .summary .summary-links {
+  padding-top: 15px;
+}
+html body .summary-wrapper .summary a {
+  font-size: 20px;
+  color: black;
+}
+html body .summary-wrapper .summary a:hover {
+  color: #768c6d;
+}
+html body .summary-wrapper .summary.main {
+  z-index: 20;
+  border-style: solid;
+  border-width: 1px;
+}
+html body .summary-wrapper .summary.shadow-1 {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 15;
+  background-color: #b6d7a8;
+}
+html body .summary-wrapper .summary.shadow-2 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #fff2cc;
+  z-index: 10;
+}
+html body .summary-wrapper .summary p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+html body .under-construction-wrapper {
+  height: 100%;
+  padding-top: 60px;
+  background-image: url('oops_bw.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+html body .under-construction-wrapper .under-construction {
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+html body .under-construction-wrapper .under-construction .under-construction-quote {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+html body .under-construction-wrapper .under-construction.main {
+  z-index: 20;
+  border-style: solid;
+  border-width: 1px;
+}
+html body .under-construction-wrapper .under-construction.shadow-1 {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 15;
+  background-color: #fff2cc;
+}
+html body .under-construction-wrapper .under-construction.shadow-2 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: black;
+  z-index: 10;
+}
+html body .under-construction-wrapper .under-construction p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  margin: 0;
 }
