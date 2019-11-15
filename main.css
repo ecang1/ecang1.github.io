@@ -1,0 +1,295 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+html .no-scroll-y {
+  overflow-y: hidden;
+}
+html body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+html body .bold {
+  font-weight: bold;
+}
+html body .wrapper {
+  height: 90%;
+  padding-top: 60px;
+}
+html body .home-wrapper {
+  height: 100%;
+}
+html body .home-wrapper .content-wrapper {
+  background-color: #fff2cc;
+  display: flex;
+  height: 100%;
+}
+html body .home-wrapper .content-wrapper .img-column {
+  width: 50%;
+}
+html body .home-wrapper .content-wrapper .img-column .home-img {
+  max-width: 100%;
+  max-height: 75%;
+  margin-top: 80px;
+  margin-right: 10px;
+  float: right;
+}
+html body .home-wrapper .content-wrapper .description-column {
+  width: 50%;
+  height: 100%;
+  display: table;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper {
+  display: table-cell;
+  padding-bottom: 60px;
+  vertical-align: middle;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-name-wrapper {
+  display: flex;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-name-wrapper .home-name {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  position: absolute;
+  z-index: 100;
+  font-size: 70px;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-name-wrapper .home-name.shadow {
+  position: absolute;
+  transform: translate(5px, 5px);
+  color: white;
+  z-index: 0;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-subtitle {
+  font-family: 'Dawning of a New Day', cursive;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 100;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-link {
+  font-family: 'Abel', sans-serif;
+  color: black;
+  text-decoration: unset;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-link.pulsate {
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+html body .home-wrapper .content-wrapper .description-column .home-text-wrapper .home-link:hover {
+  border-bottom: 2px solid currentColor;
+  border-bottom-color: #b6d7a8;
+}
+html body #navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  height: 60px;
+}
+html body #navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+html body #navbar ul .home-button {
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+}
+html body #navbar ul .active {
+  border-bottom: 2px solid currentColor;
+  border-bottom-color: #fff2cc;
+}
+html body #navbar ul li {
+  font-family: 'Abel', sans-serif;
+  float: right;
+}
+html body #navbar ul li a {
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+html body #navbar ul .nav-link a:hover {
+  border-bottom: 2px solid currentColor;
+  border-bottom-color: #b6d7a8;
+}
+html body .about-wrapper {
+  height: 90%;
+  display: flex;
+  padding-top: 60px;
+}
+html body .about-wrapper .img-column {
+  width: 45%;
+  height: 100%;
+}
+html body .about-wrapper .img-column .img-text-container {
+  height: 100%;
+}
+html body .about-wrapper .img-column .img-text-container .img-container {
+  height: 100%;
+  width: 100%;
+}
+html body .about-wrapper .img-column .img-text-container .img-container .about-img {
+  max-width: 95%;
+  max-height: 75%;
+  margin-top: 80px;
+  margin-right: 10px;
+  float: left;
+}
+html body .about-wrapper .img-column .img-text-container .img-container .about-img-text {
+  position: absolute;
+}
+html body .about-wrapper .description-column {
+  width: 55%;
+  height: 100%;
+  overflow: scroll;
+}
+html body .about-wrapper .description-column .about-text-wrapper {
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+}
+html body .about-wrapper .description-column .about-text-wrapper .about-quote {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+html body .about-wrapper .description-column .about-text-wrapper .about-description {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+}
+html body .about-wrapper .description-column .about-text-wrapper .desc-quote {
+  color: #768c6d;
+  padding-left: 20px;
+  font-style: italic;
+}
+html body .about-wrapper .description-column .about-text-wrapper .name {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+html body .summary-wrapper {
+  height: 100%;
+  padding-top: 60px;
+  background-image: url('img3_bw.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+html body .summary-wrapper .summary {
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+html body .summary-wrapper .summary .summary-quote {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+html body .summary-wrapper .summary .summary-links {
+  padding-top: 15px;
+}
+html body .summary-wrapper .summary a {
+  font-size: 20px;
+  color: black;
+}
+html body .summary-wrapper .summary a:hover {
+  color: #768c6d;
+}
+html body .summary-wrapper .summary.main {
+  z-index: 20;
+  border-style: solid;
+  border-width: 1px;
+}
+html body .summary-wrapper .summary.shadow-1 {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 15;
+  background-color: #b6d7a8;
+}
+html body .summary-wrapper .summary.shadow-2 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #fff2cc;
+  z-index: 10;
+}
+html body .summary-wrapper .summary p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+html body .under-construction-wrapper {
+  height: 100%;
+  padding-top: 60px;
+  background-image: url('oops_bw.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+html body .under-construction-wrapper .under-construction {
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+html body .under-construction-wrapper .under-construction .under-construction-quote {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+html body .under-construction-wrapper .under-construction.main {
+  z-index: 20;
+  border-style: solid;
+  border-width: 1px;
+}
+html body .under-construction-wrapper .under-construction.shadow-1 {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 15;
+  background-color: #fff2cc;
+}
+html body .under-construction-wrapper .under-construction.shadow-2 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: black;
+  z-index: 10;
+}
+html body .under-construction-wrapper .under-construction p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
